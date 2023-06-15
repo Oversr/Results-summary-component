@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: hsl(198, 100%, 98%);
+}
+
+#card {
+    box-shadow: 2px 2px 2px hsla(0, 0%, 83%, 0.281);
+    background: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+}
+
+#left-section {
+    position: relative;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    color: hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#left-section h2 {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#circle span {
+    color: hsl(0, 0%, 100%);
+    font-size: 60px;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+}
+
+#of-100 {
+    position: relative;
+    bottom: 70px;
+    font-weight: 500;
+    color: hsla(241, 100%, 89%, 52%);
+}
+
+#rating {
+    position: relative;
+    bottom: 60px;
+    font-size: 28px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+
+#info {
+    font-size: 15px;
+    position: absolute;
+    bottom: 30px;
+    max-width: 75%;
+}
+
+#right-section {
+    margin-left: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right-section h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: hsl(0, 0%, 0%);
+    position: relative;
+    top: 15px;
+    margin-bottom: 30px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rows {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 80%;
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rows:nth-child(1) {
+    background: hsla(0, 100%, 67%, 5%);
+}
+
+.rows:nth-child(1) h3 {
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    right: 40px;
+    color: hsl(0, 100%, 67%); 
+}
+
+.rows:nth-child(2) {
+    background: hsla(39, 100%, 56%, 5%);
+}
+
+.rows:nth-child(2) h3 {
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    right: 40px;
+    color: hsl(39, 100%, 56%); 
+}
+
+.rows:nth-child(3) {
+    background: hsla(166, 100%, 37%, 5%);
+}
+
+.rows:nth-child(3) h3 {
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    right: 40px;
+    color: hsl(166, 100%, 37%); 
+}
+
+.rows:nth-child(4) {
+    background: hsla(234, 85%, 45%, 5%);
+}
+
+.rows:nth-child(4) h3 {
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    right: 40px;
+    color: hsl(234, 85%, 45%); 
+}
+
+.rows span {
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+}
+
+.rows p {
+    color: hsla(224, 30%, 27%, 50%);
+    font-weight: 700;
+}
+
+#right-section button {
+    position: relative;
+    bottom: 30px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background: hsl(224, 30%, 27%);
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#right-section button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    #card {
+      flex-direction: column;
+      width: 400px;
+      height: auto;
+    }
+  
+    #left-section {
+      width: 100%;
+      border-radius: 30px;
+    }
+  
+    #circle {
+      width: 120px;
+      height: 120px;
+    }
+  
+    #circle span {
+      font-size: 40px;
+      bottom: 8px;
+    }
+  
+    #of-100, #rating {
+      bottom: 60px;
+    }
+  
+    #info {
+      bottom: 20px;
+    }
+  
+    #right-section {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    #right-section h2 {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        position: relative;
+        left: 35px;
+    }
+  
+    .rows {
+      width: 80%;
+      height: auto;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .rows img {
+        position: relative;
+        left: 10px;
+    }
+  
+    .rows:nth-child(1) h3,
+    .rows:nth-child(2) h3,
+    .rows:nth-child(3) h3,
+    .rows:nth-child(4) h3 {
+      font-size: 16px;
+    }
+  
+    #right-section button {
+        padding: 20px;
+        position: relative;
+        bottom: 10px;
+        width: 80%;
+        margin: 20px auto;
+    }
+  }
